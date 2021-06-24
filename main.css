@@ -1,0 +1,457 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+li{
+    list-style: none;
+}
+.container{
+    max-width: 1100px;
+    margin: 0 auto;
+}
+html{
+    font-family: 'Raleway', sans-serif;
+    
+}
+
+
+
+
+/* NAV */
+
+nav{
+    position:sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+    height: 68px;
+    background-color: #fff;
+}
+nav .nav-items{
+    display: flex;
+    justify-content: space-between;
+}
+nav .nav-items .logo{
+    display: flex;
+    margin-top: 0.5rem;
+}
+nav .nav-items .logo .text{
+    margin-left: 1rem;
+}
+nav .nav-items .logo .text h1{
+    font-family: 'Kirang Haerang', cursive;
+    font-size: 30px;
+}
+nav .nav-items .nav-menu ul{
+    display: flex;
+    margin-top: 1.5rem;
+}
+nav .nav-items .nav-menu ul li{
+    margin-left: 1.2rem;
+}
+nav .nav-items .nav-menu ul li a{
+    font-size: 18px;
+    color: black;
+    font-weight: 500;
+}
+nav ul li a::before{
+    content: '';
+    background-color: #FB6355;
+    position: absolute;
+    width: 0;
+    height: 4px;
+    bottom: -1px;
+    transition: width 0.5s;
+}
+nav ul li a:hover{
+    opacity: 0.8;
+}
+nav ul li a:hover::before{
+    width: 5%;
+}
+
+#hidden{
+    display: none;
+}
+
+
+
+/* Header */
+
+#header{
+    margin-top: 2rem;
+}
+#header .header-items .header-img{
+    position: relative;
+}
+#header .header-items .header-img img{
+    width: 100%;
+}
+#header .header-items .header-text{
+    position: absolute;
+    z-index: 1;
+    background-color: #FB6355;
+    opacity: 0.9;
+    width: 40%;
+    height: 60%;
+    right: 0;
+    padding: 1rem;
+}
+#header .header-items .header-text h1{
+    color: #fff;
+    margin-top: 9rem;
+    font-size: 4rem;
+    font-family: 'Kirang Haerang', cursive;
+}
+#header .header-items .header-text h3{
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 1.5rem;
+}
+
+#header .header-items .header-text .header-button a{
+    font-size: 1rem;
+    color: #FB6355;
+    background-color: #fff;
+    font-weight: 700;
+    padding: 1rem 2rem;
+}
+#header .header-items .header-text .header-button :hover{
+    background-color: #e2594c;
+    color: #fff;
+}
+
+
+
+
+
+/* About Us */
+
+#about{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+#about .about-us-items{
+    display: flex;
+}
+#about .about-us-items .left{
+    margin-right: 5rem;
+}
+#about .about-us-items .left .text h3{
+    font-weight: 500;
+}
+#about .about-us-items .left .text h2{
+    margin-top: 1rem;
+    font-size: 2rem;
+}
+#about .about-us-items .left .text hr{
+    border-radius: 5px;
+}
+#about .about-us-items .left .text p{
+    margin-top: 1rem;
+}
+#about .about-us-items .left .text .text-img{
+    display: flex;
+    margin-top: 1.5rem;
+    flex-direction: row;
+    justify-content:space-evenly;
+}
+#about .about-us-items .left .text .text-img img{
+    margin-left: 1rem;
+}
+
+#about .about-us-items .right img{
+    width: 300px;
+    margin-top: 4rem;
+}
+
+
+
+
+
+/* Menu */
+
+#menu{
+    margin-top: 3rem;
+    padding: 1rem;
+    background-color: #FEFAF9;
+}
+#menu h3{
+    font-weight: 500;
+}
+#menu h2{
+    margin-top: 1rem;
+}
+#menu .menu-item{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    
+}
+#menu .menu-item .card{
+    margin-left: 1rem;
+    transition: box-shadow 0.2s;
+    cursor: pointer;
+    margin-top: 5rem;
+    background-color: #FB6355;
+    height: auto;
+}
+#menu .menu-item .card:hover{
+    box-shadow: 3px 5px 5px 2px #fb6355;
+}
+#menu .menu-item .card-head{
+    position: absolute;
+    background-color: #fff;
+    border-radius: 0px 0px 50px 0px;
+}
+#menu .menu-item .card-head p{
+    padding: 1.1rem;
+    color: #FB6355;
+    font-weight: 700;
+}
+#menu .menu-item .card-img{
+  
+    background-color: #fff;
+}
+#menu .menu-item .card-img img{
+    width: 90%;
+}
+#menu .menu-item .card-text{
+    padding-top: 1rem;
+    opacity: 0.9;
+}
+#menu .menu-item .card-text h6{
+    font-size: 1.2rem;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
+}
+#menu .menu-item .card-text p{
+    padding: 2rem;
+    color: #fff;
+    font-weight: 500;
+}
+#menu .menu-item .card-text a{
+    color: #fff;
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+
+
+
+/* Chef */
+
+#chefs-main{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+#chefs-main .chefs{
+    display: grid;
+    grid-template-columns: auto auto auto;
+}
+#chefs-main .chefs-text{
+    text-align: center;
+}
+#chefs-main .chefs-text h3{
+    color: #fb6355;
+    font-size: 1rem;
+}
+#chefs-main .chefs-text h2{
+    margin-top: 0.5rem;
+    font-size: 2rem;
+}
+#chefs-main .chefs .chef{
+    margin-top: 3rem;
+    border: 1px solid gray;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+#chefs-main .chefs .chef img{
+    width: 100%;
+}
+#chefs-main .chefs .chef img:hover{
+    opacity: 0.8;
+}
+#chefs-main .chefs .chef h3{
+    text-align: center;
+    font-weight: 700;
+    margin-top: 1rem;
+}
+#chefs-main .chefs .chef h5{
+    text-align: center;
+    font-weight: 500;
+}
+
+
+
+/* Contact */
+
+#contact{
+    margin-top: 3rem;
+    padding: 1rem;
+    background-image: url(img/Group\ 2.png);
+    background-position: center;
+    background-size: cover;
+}
+#contact .contact-items{
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#contact .contact-items .left{
+    padding: 5rem;
+    color: #fff;
+}
+#contact .contact-items .left .left-body{
+    margin-top: 1rem;
+}
+#contact .contact-items .left .left-footer{
+    display: flex;
+    justify-content: space-around;
+}
+#contact .contact-items .left .left-footer .item{
+    background-color: #fff;
+    text-align: center;
+    margin-top: 4rem;
+    margin-right: 1rem;
+}
+#contact .contact-items .left .left-footer .item h6{
+    color: black;
+    font-size: 1rem;
+    
+}
+#contact .contact-items .left .left-footer .item {
+    padding-bottom: 1rem;
+}
+#contact .contact-items .left .left-footer .item i{
+    color: #fff;
+    background-color: #FB6355;
+    font-size: 1rem;
+    padding: 1rem;
+    border-radius: 50%;
+    margin-top: -1rem;
+    margin-bottom: 1rem;
+}
+#contact .contact-items .left .left-footer .item p{
+    margin-top: 0.2rem;
+    color: black;
+    width: 180px;
+}
+#contact .contact-items .left .left-body h2{
+    margin-bottom: 1rem;
+}
+#contact .contact-items .left .left-body p{
+    font-weight: 700;
+    
+}
+
+#contact .contact-items .right{
+    margin-top: 8rem;
+}
+
+
+
+/* Week */
+
+#week{
+    margin-top: 3rem;
+    padding: 1rem;
+}
+#week .week-head{
+    text-align: center;
+}
+#week .week-head h3{
+    margin-bottom: 1rem;
+    font-size: 0.9rem;
+    color: #fb6355;
+    font-weight: 500;
+}
+
+#week .week-main{
+    display: flex;
+    justify-content: center;
+}
+#week .week-main .item{
+    margin: 1rem;
+    margin-top: 4rem;
+}
+#week .week-main .item i{
+    background-color: #FEFAF9;
+    padding: 1rem 2rem;
+    color: #fb6355;
+    cursor: pointer;
+}
+#week .week-main .item h5{
+    text-align: center;
+    margin-top: 0.5rem;
+}
+
+#week .week-food{
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+}
+#week .week-food .food{
+    display: flex;
+    margin-right: 5rem;
+}
+#week .week-food .food .food-img{
+   margin-right: 1rem;
+   margin-bottom: 2rem;
+}
+#week .week-food .food .food-img img{
+   width: 100%;
+}
+#week .week-food .food .food-text p{
+    margin-top: 1rem;
+}
+#week .week-food .food .food-price{
+    margin-left: 1rem;
+    margin-top: 1rem;
+}
+#week .week-food .food .food-price p{
+    padding: 1rem;
+    background-color: #fb6355;
+    color: #fff;
+    font-weight: 700;
+}
+
+
+/* footer */
+
+footer{
+    margin-top: 3rem;
+    background-color: #FB6355;
+}
+footer .footer-item{
+    display: flex;
+    justify-content: space-between;
+}
+footer .footer-item .left ul{
+    display: flex;
+    margin-top: 1rem;
+}
+footer .footer-item .left ul li{
+    margin-left: 1rem;
+    padding: 0.7rem;
+    background-color: #fff;
+    border-radius: 60%;
+   
+    
+}
+footer .footer-item .left ul li i{
+    color: #FB6355;
+}
+
+footer .footer-item .logo{
+    display: flex;
+}
+footer .footer-item .right{
+    margin-top: 1.5rem;
+}
+footer .footer-item .right p{
+    color: #fff;
+}
