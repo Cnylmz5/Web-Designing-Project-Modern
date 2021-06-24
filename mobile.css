@@ -89,6 +89,9 @@
         grid-template-columns: auto auto;
         
     }
+    #about .about-us-items .left{
+        margin: 0 auto;
+    }
  
 }
 @media (max-width: 650px) {
