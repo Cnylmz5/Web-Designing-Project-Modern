@@ -293,7 +293,7 @@ nav ul li a:hover::before{
 #contact{
     margin-top: 3rem;
     padding: 1rem;
-    background-image: url(img/Group\ 2.png);
+    background-image: url(Group\ 2.png);
     background-position: center;
     background-size: cover;
 }
